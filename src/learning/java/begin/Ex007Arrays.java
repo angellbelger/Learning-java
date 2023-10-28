@@ -8,7 +8,7 @@ public class Ex007Arrays {
         list[1] = 7;
         list[2] = 17;
 
-        for (int i=0; i<=2;i++){
+        for (int i = 0; i < list.length; i++){
             System.out.println("Key:"+i+" Value: "+list[i]);
         }
     }
