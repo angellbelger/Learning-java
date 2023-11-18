@@ -1,20 +1,27 @@
-package javacore.Coverloadingmethods.domain;
+package javacore.Dbuilders.domain;
 
 public class Anime {
     private String type;
     private int episodes;
     private String name;
     private String genre;
+    private String studio;
 
-    public void init(String type, int episodes, String name){
+    public Anime(String type, int episodes, String name, String genre){
+        this();
         this.type = type;
         this.episodes = episodes;
         this.name = name;
+        this.genre = genre;
     }
 
-    public void init(String type, int episodes, String name, String genre){
-        this.init(type, episodes, name);
-        this.genre = genre;
+    public Anime(){
+        System.out.println("Dentro da builder sem argumentos");
+    }
+
+    public Anime(String type, int episodes, String name, String genre, String studio){
+        this(type, episodes, name, genre);
+        this.studio = studio;
     }
 
     public void printData(){
@@ -22,6 +29,7 @@ public class Anime {
         System.out.println(name);
         System.out.println(episodes);
         System.out.println(genre);
+        System.out.println(studio);
     }
 
 
