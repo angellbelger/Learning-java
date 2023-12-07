@@ -17,7 +17,6 @@ public class CalculadoraEstrutural {
      *
      * @param args Os argumentos de linha de comando (não utilizados neste programa).
      */
-
     public static void main(String[] args) {
 
         // Código Main do programa aqui
