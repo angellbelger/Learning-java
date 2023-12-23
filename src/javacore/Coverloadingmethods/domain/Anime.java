@@ -24,7 +24,6 @@ public class Anime {
         System.out.println(genre);
     }
 
-
     public void setType(String type){
         this.type = type;
     }

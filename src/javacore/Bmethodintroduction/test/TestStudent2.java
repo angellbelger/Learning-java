@@ -16,5 +16,7 @@ public class TestStudent2 {
         student02.gender = 'F';
 
         student01.talk();
+        System.out.println("--------------------");
+        student02.talk();
     }
 }

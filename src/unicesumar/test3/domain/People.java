@@ -1,31 +1,31 @@
-package javacore.Hheritage.domain;
+package unicesumar.test3.domain;
 
-public abstract class People {
+public class People {
     private String name;
-    private String cpf;
     private int age;
+    private String ssn;
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
 
     public void setAge(int age) {
         this.age = age;
     }
 
+    public void setSsn(String ssn) {
+        this.ssn = ssn;
+    }
+
     public String getName() {
         return name;
     }
 
-    public String getCpf(){
-        return cpf;
+    public int getAge() {
+        return age;
     }
 
-    public int getAge(){
-        return age;
+    public String getSsn() {
+        return ssn;
     }
 }

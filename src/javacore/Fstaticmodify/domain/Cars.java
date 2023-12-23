@@ -6,19 +6,19 @@ public class Cars {
     private static double limitSpeed = 250;
     private int year;
 
-    public Cars(String name, double limitSpeed){
+    public Cars(String name, double maximumSpeed){
         this.name = name;
-        this.maximumSpeed = limitSpeed;
+        this.maximumSpeed = maximumSpeed;
     }
 
-    public Cars(String name, double limitSpeed, int year){
-        this(name, limitSpeed);
+    public Cars(String name, double maximumSpeed, int year){
+        this(name, maximumSpeed);
         this.year = year;
     }
 
     public void printCar(){
         System.out.println("---------------------");
-        System.out.println("Name: "+ name +"\nMaximum speed: "+ maximumSpeed + "\nlimit speed:" + limitSpeed);
+        System.out.println("Name: "+ name +"\nMaximum speed: "+ maximumSpeed + "\nlimit speed: " + limitSpeed);
         System.out.println("Year: "+ year);
     }
 

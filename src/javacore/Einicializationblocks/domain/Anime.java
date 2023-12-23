@@ -34,7 +34,6 @@ public class Anime {
 
     public String getName(){
         return name;
-
     }
 
     public int[] getEpisodes(){
